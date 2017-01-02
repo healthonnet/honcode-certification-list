@@ -4,6 +4,7 @@ var should = require('chai').should();
 var honcodeCertificationList = require('../src/index.js');
 
 describe('HONcode Certification List', function() {
+  this.timeout(15000);
 
   var md5List;
 

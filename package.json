@@ -1,0 +1,20 @@
+{
+  "name": "honcode-certification-list",
+  "version": "0.0.1",
+  "description": "Retrieve the MD5 HONcode certification list",
+  "keywords": [
+    "HONcode",
+    "certification",
+    "HON",
+    "Health On the Net"
+  ],
+  "author": "William Belle <william.belle@gmail.com>",
+  "license": "Apache 2.0",
+  "repository": "https://github.com/healthonnet/honcode-certification-list.git",
+  "scripts": {
+  },
+  "devDependencies": {
+    "jshint": "~2.9.4"
+  },
+  "dependencies": { }
+}

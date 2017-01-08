@@ -2,6 +2,7 @@
 
 var os       = require('os');
 var fs       = require('fs');
+var md5      = require('md5');
 var download = require('download');
 var Promise  = require('bluebird');
 
@@ -55,4 +56,13 @@ var retrieveMd5List = function() {
 
 exports.getHONcodeCertificationList = function() {
   return retrieveMd5List();
+};
+
+exports.isInList = function(honCodeList, urlsList) {
+  for (var i = 0; i < urlsList.length; i++) {
+    if (honCodeList[md5(urlsList[i])] !== undefined) {
+      return true;
+    }
+  }
+  return false;
 };

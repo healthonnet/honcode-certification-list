@@ -35,4 +35,20 @@ describe('HONcode Certification List', function() {
     done();
   });
 
+  it('should match a md5 in list', function(done) {
+    var urlsList = ['webmd.com/heartburn-gerd/', 'webmd.com/'];
+    honcodeCertificationList.isInList(md5List, urlsList).should.equal(true);
+    done();
+  });
+
+  it('should not match a md5 in list', function(done) {
+    var urlsList = [
+      'playboy.com/articles/facetime-with-krissy-hartley/',
+      'playboy.com/articles/',
+      'playboy.com/',
+    ];
+    honcodeCertificationList.isInList(md5List, urlsList).should.equal(false);
+    done();
+  });
+
 });

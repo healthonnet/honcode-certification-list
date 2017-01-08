@@ -1,5 +1,7 @@
 'use strict';
 
+var os = require('os');
+var fs = require('fs');
 var should = require('chai').should();
 var honcodeCertificationList = require('../src/index.js');
 
@@ -7,6 +9,14 @@ describe('HONcode Certification List', function() {
   this.timeout(15000);
 
   var md5List;
+
+  before(function(done) {
+    var tmpDir = os.tmpDir();
+    if (fs.existsSync(tmpDir + '/HONcodeMD5List.txt')) {
+      fs.unlinkSync(tmpDir + '/HONcodeMD5List.txt');
+    }
+    done();
+  });
 
   beforeEach(function(done) {
     honcodeCertificationList.getHONcodeCertificationList().then(function(hash) {

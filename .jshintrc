@@ -13,6 +13,7 @@
   "globals": {
     "it": true,
     "describe": true,
-    "beforeEach": true
+    "beforeEach": true,
+    "before": true
   }
 }

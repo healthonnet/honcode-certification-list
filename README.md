@@ -25,6 +25,26 @@ HONcodeCertificationList.getHONcodeCertificationList().then(function(hash) {
 });
 ```
 
+API
+---
+
+### .getHONcodeCertificationList()
+
+Type: `function`
+
+Return a Promise with the HONcode MD5 list has parameter
+
+### .isInList(array)
+
+Type: `function`
+
+Return true if the urls in the list match an entry in HONcode MD5 list.
+
+See Also
+--------
+
+ * [HONcode Certification Utils](https://github.com/healthonnet/honcode-certification-utils)
+
 Contributing to HONcode Certification List
 ------------------------------------------
 
@@ -41,7 +61,6 @@ License
 -------
 
 Apache License 2.0
-
 
 [npm-image]: https://img.shields.io/npm/v/honcode-certification-list.svg
 [npm-url]: https://www.npmjs.com/package/honcode-certification-list

@@ -1,6 +1,6 @@
 {
   "name": "honcode-certification-list",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Retrieve the MD5 HONcode certification list",
   "keywords": [
     "HONcode",

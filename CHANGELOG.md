@@ -1,6 +1,10 @@
 HONcode Certification List Changelog
 ====================================
 
+### v0.0.3 / 2017-01-16
+
+  - Change liste_md5 url
+
 ### v0.0.2 / 2017-01-09
 
   - Add new function `isInList()`

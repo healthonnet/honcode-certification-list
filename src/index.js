@@ -6,7 +6,7 @@ var md5      = require('md5');
 var download = require('download');
 var Promise  = require('bluebird');
 
-var url = 'https://www.hon.ch/HONcode/Plugin/listeMD5.txt';
+var url = 'https://www.honcode.ch/HONcode/Plugin/listeMD5.txt';
 var fileName = 'HONcodeMD5List.txt';
 
 var buildHash = function(data) {

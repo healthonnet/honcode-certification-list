@@ -30,7 +30,7 @@ var isOutdated = function(file) {
 };
 
 var retrieveMd5List = function() {
-  var promise = new Promise(function(resolve) {
+  var promise = new Promise(function(resolve,reject) {
     var tmpDir = os.tmpDir();
     var fileExist = fs.existsSync(tmpDir + '/' + fileName);
     var isTooOld = false;
@@ -47,7 +47,7 @@ var retrieveMd5List = function() {
         var hash = buildHash(data.toString());
         resolve(hash);
       }).catch(function(reason) {
-        console.log(reason);
+        reject(reason);
       });
     }
   });

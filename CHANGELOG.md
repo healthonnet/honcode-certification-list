@@ -1,6 +1,10 @@
 HONcode Certification List Changelog
 ====================================
 
+### v0.0.5 / 2017-01-22
+
+  - Fix deprecation warning `os.tmpDir()`.
+
 ### v0.0.4 / 2017-01-20
 
   - Improve unit test coverage (test Promise catch)

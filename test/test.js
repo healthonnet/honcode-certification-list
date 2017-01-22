@@ -11,7 +11,7 @@ describe('HONcode Certification List', function() {
   var md5List;
 
   before(function(done) {
-    var tmpDir = os.tmpDir();
+    var tmpDir = os.tmpdir();
     if (fs.existsSync(tmpDir + '/HONcodeMD5List.txt')) {
       fs.unlinkSync(tmpDir + '/HONcodeMD5List.txt');
     }

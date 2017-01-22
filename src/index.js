@@ -31,7 +31,7 @@ var isOutdated = function(file) {
 
 var retrieveMd5List = function() {
   var promise = new Promise(function(resolve,reject) {
-    var tmpDir = os.tmpDir();
+    var tmpDir = os.tmpdir();
     var fileExist = fs.existsSync(tmpDir + '/' + fileName);
     var isTooOld = false;
     if (fileExist) {

@@ -32,7 +32,6 @@
     "rewire": "^2.5.2"
   },
   "dependencies": {
-    "bluebird": "^3.4.7",
     "download": "^5.0.2",
     "md5": "^2.2.1"
   }

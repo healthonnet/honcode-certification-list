@@ -1,6 +1,11 @@
 HONcode Certification List Changelog
 ====================================
 
+### v0.0.6 / 2017-06-08
+
+  - Remove Bluebird dependency
+  - Update dependencies
+
 ### v0.0.5 / 2017-01-22
 
   - Fix deprecation warning `os.tmpDir()`.
